@@ -1,0 +1,55 @@
+.button{
+    font-size: 15px;
+
+}
+
+.buttonDefault{
+    width:250px;
+    padding: 22px 4px 22px;
+    background-color: #1DA1F2;
+    color: white;
+    
+    border: none;
+    font-family: "sf-compact";   
+}
+
+.buttonDefault:hover{
+    background-color: #00B6F1;
+    cursor: pointer;
+}
+
+.buttonTweet{
+    width:100px;
+    opacity:0.5;
+    padding: 8px 20px 8px;
+    float: right;
+    background-color: #1DA1F2;
+    color: white;
+    
+    border: none;
+    font-family: "sf-compact";   
+}
+
+.buttonTweet:hover{
+    cursor: pointer;
+    opacity:1
+}
+
+.buttonFollow{
+    width: 80px;
+    background: transparent;
+    margin: 16px 0 0 4px;
+    padding:15px, 93px, 15px, 93px ;
+    color: #1DA1F2;
+    border-radius: 9999px;
+    font-family: "sf-compact";   
+    float: right;
+    align-text: center;
+    border: 1px solid #1DA1F2
+}
+
+.buttonFollow:hover{
+    cursor: pointer;
+    color: black;
+    background-color: #1DA1F2
+}

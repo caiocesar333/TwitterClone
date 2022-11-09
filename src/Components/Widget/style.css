@@ -1,0 +1,13 @@
+.wh-div{
+    margin-top: 10px;
+    width:420px;
+    background: #f7f9fa;
+    border-radius: 16px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.widget-footer{
+    position: fixed
+}
