@@ -35,7 +35,7 @@ export const NewTweet = styled.div`
     align-items: center;
     flex-wrap: wrap;
 
-    border-bottom: 1px solid #EBEEF0;
+    /* border-bottom: 1px solid #EBEEF0; */
     border-top: 1px solid #EBEEF0;
 `;
 

@@ -29,12 +29,12 @@ const Post = forwardRef(
           </div>
           <img src={image} alt="" />
           <div className="post__footer">
-            <ChatBubbleOutlineIcon  className="post__icon"  fontSize="small" /><span className="span">61</span>
-            <RepeatIcon  className="post__icon" fontSize="small" /><span className="span">12</span>
-            <FavoriteBorderIcon  className="post__icon" fontSize="small" /><span className="span">6,1</span>
-            <PublishIcon className="post__icon"  fontSize="small" /><span className="span">61</span>
+            <ChatBubbleOutlineIcon  className="post__icon"  fontSize="small" /><span className="span"></span>
+            <RepeatIcon  className="post__icon" fontSize="small" /><span className="span"></span>
+            <FavoriteBorderIcon  className="post__icon" fontSize="small" /><span className="span"></span>
+            <PublishIcon className="post__icon"  fontSize="small" /><span className="span"></span>
           </div>
-          <span className="thread">Show this thread</span>
+          <p className="thread">Show this thread</p>
         </div>
       </div>
     );

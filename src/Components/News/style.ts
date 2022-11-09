@@ -8,5 +8,4 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     border-top: 1px solid #EBEEF0;
-    border-bottom: 1px solid #EBEEF0;;
 `;

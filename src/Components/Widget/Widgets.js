@@ -10,7 +10,7 @@ import WhoToFollow from "../WhoToFollow/WhoToFollow.tsx"
 
 function Widgets() {
   return (
-    <Container>
+    <Container className="widget">
       <SearchWrapper>
         <SearchBar />
         <div className="wh-div">

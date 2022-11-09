@@ -66,13 +66,13 @@ function TweetBox() {
           </div>
 
         </div>
-        {/* <input
+        <input
           value={tweetImage}
           onChange={(e) => setTweetImage(e.target.value)}
           className="tweetBox__imageInput"
           placeholder="Optional: Enter image URL"
           type="text"
-        /> */}
+        />
       </form>
     </div>
   );

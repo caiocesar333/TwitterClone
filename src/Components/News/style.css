@@ -1,0 +1,17 @@
+.text-xs{
+    color: gray;
+    font-size: 14px
+}
+
+.font-medium{
+    font-weight: 700
+}
+
+.w-16{
+    width: 64px;
+}
+
+.flex-new{
+    display: flex;
+    flex-direction: row
+}

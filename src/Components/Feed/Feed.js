@@ -21,7 +21,7 @@ function Main() {
 
   return (
     <Container className="feed">
-      <Header>
+      <Header className="header">
         <strong class="home">Home</strong>
       </Header>
 

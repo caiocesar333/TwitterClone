@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: flex;
     margin-top: 10px;
-    border-top: 1px solid #EBEEF0;
+    border-top: 1px solid #EBEEF0;   
+    border-bottom: 1px solid #EBEEF0;   
 `;
 
 export const ProfileImage = styled.div`

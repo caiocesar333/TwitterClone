@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled.div`
+width: 400px;
   display: flex;
   flex-direction: row;
 `;

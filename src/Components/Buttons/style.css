@@ -1,8 +1,10 @@
 .button{
     font-size: 15px;
-
 }
 
+.buttons:hover{
+    cursor:pointer
+}
 .buttonDefault{
     width:250px;
     padding: 22px 4px 22px;
@@ -52,4 +54,31 @@
     cursor: pointer;
     color: black;
     background-color: #1DA1F2
+}
+
+.buttonLogin{
+    padding-left:24px;
+    padding-right:24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 9999px;
+    font-weight:bold
+}
+
+.buttonSignUp{
+
+    margin-top:23px;
+    margin-left:15px;
+    padding-left:24px;
+    padding-right:24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 9999px;
+    font-weight:bold
 }

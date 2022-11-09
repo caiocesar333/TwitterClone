@@ -13,10 +13,10 @@ export interface FooterProps {
 
 export function Footer({ children }: FooterProps) {
     return (
-        <Container>
+        <Container className="footer">
             <Wrapper>
                 <div className="ml-36 flex flex-col">
-                    <span className="font-bold text-md">Dont miss what's happening</span>
+                    <h2 className="font-bold text-md">Dont miss what's happening</h2>
                     <span className="text-sm">People on twitter are the first to know</span>
                 </div>
                 <ButtonLogin />          

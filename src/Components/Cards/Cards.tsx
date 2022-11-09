@@ -16,7 +16,7 @@ export interface CardProps {
 
 export function Cards({ children }: CardProps) {
     return (
-        <Container>
+        <Container className="card-container">
 
             <div className="post__avatar">
                 <Avatar alt="A" src='https://randomuser.me/api/portraits/men/7.jpg'/>

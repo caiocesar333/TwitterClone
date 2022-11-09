@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 export interface ButtonLoginProps {
     children?: any;
@@ -11,7 +12,7 @@ export function ButtonLogin({ children }: ButtonLoginProps) {
 
 
     return (
-        <button onClick={showError} className="py-2 px-6 mr-8 bg-transparent  text-white border border-white font-sf font-normal text-sm rounded-full hover:opacity-100"> 
+        <button onClick={showError} className="buttonLogin buttons"> 
         Log In</button>
     )
 }
