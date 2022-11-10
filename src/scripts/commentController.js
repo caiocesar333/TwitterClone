@@ -1,14 +1,10 @@
-let counter = 0;
-function commentController(){
-    const commentContainer = document.querySelector("#comment-container")
 
-    if (counter === 0){
-        commentContainer.classList.remove("hidden")
-        counter++
-    } else{
-        commentContainer.classList.add("hidden")
-        counter--
-    }
+function commentController(){
+    const modal = document.querySelector("#modal")
+    const overlay = document.querySelector("#overlay")
+
+    modal.classList.add("show");
+    overlay.classList.add("show");
 }
 
 export default commentController

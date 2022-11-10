@@ -1,0 +1,65 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9
+}
+
+.modal {
+  display: none;
+  width: 400px;
+  height: 290px;
+  max-width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  border: 1px solid #1c1d20;
+  background-color: #17202a;
+  border-radius: 10px;
+}
+
+.show {
+  display: flex;
+}
+
+.comment-container{
+    display: flex;
+}
+
+.comment-input{
+    margin-top:100px;
+    margin-left:85px ;
+    width:70%;
+    border: none;
+    font-size:20px;
+    color:white
+}
+
+.comment-button{
+    margin-top:90px;
+    margin-left: 200px
+}
+
+.avatar-modal{
+    position:absolute;
+    top:130px;
+    left: 20px
+}
+
+.close-icon{
+    color:white;
+    margin-left:10px
+}
+
+.close-icon:hover{
+    cursor:pointer
+}

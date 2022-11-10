@@ -6,8 +6,8 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 import Like from "../../scripts/like"
-import useComment from "../../scripts/useComment";
 import commentController from "../../scripts/commentController";
+import Modal from "../Modal/Modal"
 
 
 
@@ -67,7 +67,7 @@ const Post = forwardRef(
           </div>
           <img src={image} alt="" />
           <div className="post__footer">
-            <ChatBubbleOutlineIcon onClick={commentController}id="chat" className="post__icon" fontSize="small" /><span className="span"></span>
+            <ChatBubbleOutlineIcon onClick={commentController} id="chat" className="post__icon" fontSize="small" /><span className="span"></span>
             <RepeatIcon className="post__icon" fontSize="small" /><span className="span"></span>
             <FavoriteBorderIcon onClick={Like} id="favorite" className="post__icon" fontSize="small" />
             <span className="span">
@@ -75,17 +75,20 @@ const Post = forwardRef(
             </span>
             <PublishIcon className="post__icon" fontSize="small" /><span className="span"></span>
           </div>
-          <div id="comment-container" className="comment-container hidden">
-            <form id="comment-form" className="comment-form">
-              <input id="comment-input" className="comment-input"></input>
-              <button type="button" onClick={useComment} id="comment-button" className="comment-button">Send it</button>
-            </form>
-          </div>
-            <div id="comment">
-              
+         <Modal/>
+          <div className="container-div hidden">
+            <div id="comment" className="hidden">
+              <Avatar  style={{ height: '30px', width: '30px' }} alt="Jerome" src="https://randomuser.me/api/portraits/men/85.jpg" />
+              <p className="commentName">{displayName}</p>
+              <p className="commentUser">@{username}</p>
             </div>
+            <div id="comment-text" className="comment-text">
+
+            </div>
+
+          </div>
           <p className="thread">Show this thread</p>
-          
+
         </div>
       </div>
     );
