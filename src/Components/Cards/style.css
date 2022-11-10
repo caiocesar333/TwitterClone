@@ -63,3 +63,9 @@
   .thread:hover{
     cursor:pointer
   }
+
+  .card-image{
+    max-width:400px;
+    margin-right: 20px;
+    margin-top: 15px
+  }

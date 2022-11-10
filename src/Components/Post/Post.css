@@ -63,3 +63,10 @@
 .thread:hover{
   cursor:pointer
 }
+
+.time{
+  color:gray;
+  font-size: 14px;
+  font-weight:normal;
+  margin-left: 10px
+}

@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import { Container, Card } from "./style"
 import "../../styles/global";
 import { Avatar } from "@material-ui/core";
@@ -6,6 +6,7 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+import banner1 from "../../assets/claro/banner1.png"
 import "./style.css"
 
 export interface CardProps {
@@ -19,7 +20,7 @@ export function Cards({ children }: CardProps) {
         <Container className="card-container">
 
             <div className="post__avatar">
-                <Avatar alt="A" src='https://randomuser.me/api/portraits/men/7.jpg'/>
+                <Avatar alt="A" src='https://randomuser.me/api/portraits/men/7.jpg' />
             </div>
 
 
@@ -34,7 +35,9 @@ export function Cards({ children }: CardProps) {
                     </div>
                     <div className="post__headerDescription">
                         <p>Tom is in a big hurry.</p>
+                        <img className="card-image" alt='' src={banner1}></img>
                     </div>
+
                 </div>
                 <div >
                     <ChatBubbleOutlineIcon className="post__icon" fontSize="small" /><span className="span">61</span>

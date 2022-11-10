@@ -8,6 +8,8 @@ import ListOutlinedIcon from '@mui/icons-material/ListOutlined';
 import EmojiEmotionsOutlinedIcon from '@mui/icons-material/EmojiEmotionsOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import db from "../../firebase";
+import firebase from "firebase";
+import serverTimestamp from "firebase/database";
 
 // import ButtonTweet from "../Buttons/ButtonTweet"
 
@@ -26,7 +28,10 @@ function TweetBox() {
       image: tweetImage,
       avatar:
         "https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png",
-    });
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+      time: new Date()
+      });
+
 
     setTweetMessage("");
     setTweetImage("");
@@ -55,7 +60,8 @@ function TweetBox() {
             <CalendarMonthOutlinedIcon className="icon" fontSize="medium" />
 
             <div className="buttonBox">
-              <button 
+              <button
+                id="submit"
                 onClick={sendTweet}
                 type="submit"
                 className="button buttonTweet"
