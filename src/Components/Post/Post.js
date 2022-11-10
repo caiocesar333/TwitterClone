@@ -5,12 +5,13 @@ import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
+import Like from "../../scripts/like"
 
 
 const Post = forwardRef(
   ({ displayName, username, verified, text, image, avatar, time }, ref) => {
 
-    if ( time == null) {
+    if (time == null) {
       var timer = "now";
     } else {
       let date = time.toDate()
@@ -65,7 +66,10 @@ const Post = forwardRef(
           <div className="post__footer">
             <ChatBubbleOutlineIcon className="post__icon" fontSize="small" /><span className="span"></span>
             <RepeatIcon className="post__icon" fontSize="small" /><span className="span"></span>
-            <FavoriteBorderIcon className="post__icon" fontSize="small" /><span className="span"></span>
+            <FavoriteBorderIcon onClick={Like} id="favorite" className="post__icon" fontSize="small" />
+             <span className="span">
+                <p id="liked"></p>
+              </span>
             <PublishIcon className="post__icon" fontSize="small" /><span className="span"></span>
           </div>
           <p className="thread">Show this thread</p>

@@ -18,6 +18,7 @@
     "@types/styled-components": "^5.1.26",
     "firebase": "^7.17.2",
     "react": "^16.14.0",
+    "react-activity-feed": "^1.4.0",
     "react-dom": "^16.14.0",
     "react-flip-move": "^3.0.4",
     "react-scripts": "3.4.1",

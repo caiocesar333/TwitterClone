@@ -45,6 +45,12 @@
   color: gray;
 }
 
+
+
+.post__icon:hover{
+  cursor:pointer
+}
+
 .post__avatar {
   padding: 20px;
 }
@@ -69,4 +75,12 @@
   font-size: 14px;
   font-weight:normal;
   margin-left: 10px
+}
+
+.hidden{
+  display: none
+}
+
+.favorited{
+ color:red
 }
