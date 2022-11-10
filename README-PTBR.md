@@ -2,6 +2,11 @@
 
 Projeto de clonagem parcial da interface do Twitter, utilizando React JS, TypeScript, CSS e algumas bibliotecas
 
+![Zlb0tli](https://user-images.githubusercontent.com/81143531/201039040-063a8e7c-83b0-40a6-9eb2-1547532281a0.png)
+![nH4MqWK](https://user-images.githubusercontent.com/81143531/201039045-0832ee0b-72c0-4869-8069-40f87dc886c8.png)
+![r1Lgkji](https://user-images.githubusercontent.com/81143531/201039047-5331b604-95f6-47e9-8686-ce4eb3f9e9c6.png)
+
+
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
