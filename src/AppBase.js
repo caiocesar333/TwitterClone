@@ -7,6 +7,7 @@ import Widgets from "./Components/Widget/Widgets";
 import Footer from "./Components/Footer/Footer";
 import './styles/global.css';
 import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
+import PopUpLogin from "../src/Components/Modal/PopUpLogin"
 
 // import { Container } from "postcss";
 
@@ -15,6 +16,15 @@ export const ThemeContext = createContext(null);
 
 function AppBase() {
 
+  window.addEventListener("load", () => {
+    let popUp = document.querySelector("#popUp")
+    let overlay = document.querySelector("#overlay")
+    if (!(localStorage.getItem("admin") === "admin") ) {
+      popUp.classList.add("show")
+      overlay.classList.add("show")
+    }
+  })
+
   const [theme, setTheme] = useState("light");
 
   const toggleTheme = () => {
@@ -22,22 +32,23 @@ function AppBase() {
   };
 
   return (
-      <ThemeContext.Provider value={{ theme, toggleTheme }}>
-        <GlobalStyle />
-        <div className="app">
-          <Container id={theme}>
-            <Wrapper>
-              <Sidebar />
-              <Feed />
-              <div id="darkMode-div">
-                <AutoAwesomeOutlinedIcon className="right" id="darkMode" onClick={toggleTheme} />
-              </div>
-              <Widgets />
-            </Wrapper>
-            <Footer />
-          </Container>
-        </div>
-      </ThemeContext.Provider>
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <GlobalStyle />
+      <div className="app">
+        <PopUpLogin/>
+        <Container id={theme}>
+          <Wrapper>
+            <Sidebar />
+            <Feed />
+            <div id="darkMode-div">
+              <AutoAwesomeOutlinedIcon className="right" id="darkMode" onClick={toggleTheme} />
+            </div>
+            <Widgets />
+          </Wrapper>
+          <Footer />
+        </Container>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
