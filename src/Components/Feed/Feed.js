@@ -9,14 +9,15 @@ import db from "../../firebase";
 import FlipMove from "react-flip-move";
 // import AutoAwesomeOutlinedIcon from '@mui/icons-material/AutoAwesomeOutlined';
 
-
 function Main() {
+
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    db.collection("posts").onSnapshot((snapshot) =>
+    db.collection("posts").orderBy("createdAt", "desc").onSnapshot((snapshot) =>
       setPosts(snapshot.docs.map((doc) => doc.data()))
     );
+    
   }, []);
 
   return (
@@ -28,7 +29,7 @@ function Main() {
       <TweetBox />
 
       <NewTweet className="newtweet">
-        <FlipMove>
+        <FlipMove > 
           {posts.map((post) => (
             <Post
               key={post.text}
@@ -38,10 +39,12 @@ function Main() {
               text={post.text}
               avatar={post.avatar}
               image={post.image}
+              time = {post.createdAt}
             />
           ))}
         </FlipMove>
       </NewTweet>
+
       <Cards />
     </Container>
   );
