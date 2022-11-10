@@ -107,8 +107,10 @@
 .comment{
   display: flex;
   margin-top: 20px;
+  padding-top: 15px;
   margin-bottom: 20px;
-  align-items: center
+  align-items: center;
+  border-top: 1px solid #EBEEF0 ; 
 }
 
 .comment-text{
@@ -121,8 +123,6 @@
   background: transparent;
   display: flex;
   flex-direction: column; 
-  border-top: 1px solid #EBEEF0 ;
-  border-bottom: 1px solid #EBEEF0;
 }
 
 .commentName{
