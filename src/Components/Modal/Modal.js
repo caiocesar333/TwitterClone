@@ -7,9 +7,8 @@ import { Avatar } from "@material-ui/core";
 import CloseIcon from '@mui/icons-material/Close';
 
 function Modal() {
-    return (<div id="overlay" class="overlay">
+    return (
         <div id="modal" class="modal">
-
             <div id="comment-container" className="comment-container ">
                     <CloseIcon className="close-icon" onClick={modalController}/>
                 <form id="comment-form" className="comment-form">
@@ -20,7 +19,6 @@ function Modal() {
             </div>
         </div>
 
-    </div>
     )
 }
 

@@ -47,6 +47,7 @@ const Post = forwardRef(
 
     return (
       <div className="post" ref={ref}>
+
         <div className="post__avatar">
           <Avatar alt="Jerome" src="https://randomuser.me/api/portraits/men/85.jpg" />
         </div>
@@ -67,6 +68,7 @@ const Post = forwardRef(
           </div>
           <img src={image} alt="" />
           <div className="post__footer">
+            <Modal />
             <ChatBubbleOutlineIcon onClick={commentController} id="chat" className="post__icon" fontSize="small" /><span className="span"></span>
             <RepeatIcon className="post__icon" fontSize="small" /><span className="span"></span>
             <FavoriteBorderIcon onClick={Like} id="favorite" className="post__icon" fontSize="small" />
@@ -75,10 +77,9 @@ const Post = forwardRef(
             </span>
             <PublishIcon className="post__icon" fontSize="small" /><span className="span"></span>
           </div>
-         <Modal/>
           <div className="container-div hidden">
             <div id="comment" className="hidden">
-              <Avatar  style={{ height: '30px', width: '30px' }} alt="Jerome" src="https://randomuser.me/api/portraits/men/85.jpg" />
+              <Avatar style={{ height: '30px', width: '30px' }} alt="Jerome" src="https://randomuser.me/api/portraits/men/85.jpg" />
               <p className="commentName">{displayName}</p>
               <p className="commentUser">@{username}</p>
             </div>

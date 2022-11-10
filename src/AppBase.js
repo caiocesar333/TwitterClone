@@ -22,6 +22,9 @@ function AppBase() {
     if (!(localStorage.getItem("admin") === "admin") ) {
       popUp.classList.add("show")
       overlay.classList.add("show")
+    } else {
+      popUp.classList.remove("show")
+      overlay.classList.remove("show")
     }
   })
 
