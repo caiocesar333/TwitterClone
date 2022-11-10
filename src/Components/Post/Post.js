@@ -6,6 +6,9 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import PublishIcon from "@material-ui/icons/Publish";
 import Like from "../../scripts/like"
+import useComment from "../../scripts/useComment";
+import commentController from "../../scripts/commentController";
+
 
 
 const Post = forwardRef(
@@ -64,15 +67,25 @@ const Post = forwardRef(
           </div>
           <img src={image} alt="" />
           <div className="post__footer">
-            <ChatBubbleOutlineIcon className="post__icon" fontSize="small" /><span className="span"></span>
+            <ChatBubbleOutlineIcon onClick={commentController}id="chat" className="post__icon" fontSize="small" /><span className="span"></span>
             <RepeatIcon className="post__icon" fontSize="small" /><span className="span"></span>
             <FavoriteBorderIcon onClick={Like} id="favorite" className="post__icon" fontSize="small" />
-             <span className="span">
-                <p id="liked"></p>
-              </span>
+            <span className="span">
+              <p id="liked"></p>
+            </span>
             <PublishIcon className="post__icon" fontSize="small" /><span className="span"></span>
           </div>
+          <div id="comment-container" className="comment-container hidden">
+            <form id="comment-form" className="comment-form">
+              <input id="comment-input" className="comment-input"></input>
+              <button type="button" onClick={useComment} id="comment-button" className="comment-button">Send it</button>
+            </form>
+          </div>
+            <div id="comment">
+              
+            </div>
           <p className="thread">Show this thread</p>
+          
         </div>
       </div>
     );

@@ -1,15 +1,19 @@
-import { useFeedContext } from 'react-activity-feed'
+function useComment() {
+    
+    const commentContainer = document.querySelector("#comment-container")
+    const commentInput = document.querySelector("#comment-input");
+    const comment = document.querySelector("#comment");
+    const comentario = document.createElement("p");
 
-export default function useComment() {
-  const feed = useFeedContext()
+    
+    let text = commentInput.value;
+    
+    comentario.innerHTML = text;
 
-  const createComment = async (text, activity) => {
-    await feed.onAddReaction('comment', activity, {
-      text,
-    })
-  }
+    comment.appendChild(comentario);
 
-  return {
-    createComment,
-  }
+    commentContainer.classList.add("hidden")
+
 }
+
+export default useComment
