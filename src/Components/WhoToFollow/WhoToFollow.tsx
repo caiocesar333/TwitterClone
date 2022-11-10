@@ -15,7 +15,7 @@ export interface WhoToFollowProps {
 
 export function WhoToFollow({ children }: WhoToFollowProps) {
   return (
-    <Container>
+    <Container className='who-to'>
       <Wrapper>
         <h3>Who to follow</h3>
         <div className="flex">

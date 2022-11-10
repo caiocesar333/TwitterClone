@@ -6,8 +6,10 @@
 
 .profile{
     margin-top:10px;
+    padding-top:10px;
     display:flex;
     flex-direction:row;
+    border-top: 1px solid #ebeef0;
 }
 
 .text-div{
@@ -19,4 +21,8 @@
 
 .button-div{
     margin-top:50px;
+}
+
+.who-to{
+    margin-top:20px;
 }
