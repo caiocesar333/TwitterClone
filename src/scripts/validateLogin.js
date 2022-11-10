@@ -19,6 +19,11 @@ function validateLogin() {
             window.location = "http://localhost:3000/";
         } else {
             localStorage.clear();
+            let span = document.createElement("p")
+            let text = "Ops, username or password incorrects"
+            span.innerHTML = text
+            span.classList.add("red");
+            form.appendChild(span);
         }
     })
 

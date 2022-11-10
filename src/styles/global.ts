@@ -98,4 +98,7 @@ export default createGlobalStyle`
     border-top: 1px solid #333d46;
   }
   
+  .red{
+    color: red;
+  }
 `;
