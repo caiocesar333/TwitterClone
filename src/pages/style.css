@@ -1,0 +1,38 @@
+.twitter-icon{
+    color:#1da1f2;
+    width:100px;
+    margin-bottom: 70px
+}
+
+.input-div {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column
+}
+
+.login-input {
+  width: 450px;
+  height: 70px;
+  left: 735px;
+  top: 222px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+
+  margin-top:15px;
+
+  text-align:start;
+  padding: 0 15px 0
+}
+
+#login{
+    width:100%;   
+    margin-top: 25px
+}
+
+.actions{
+    width: 100%;
+    display: flex;
+    justify-content: space-between
+}
