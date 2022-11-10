@@ -1,6 +1,6 @@
-# Título do projeto
+# Twitter Clone
 
-Um parágrafo da descrição do projeto vai aqui
+Projeto de clonagem parcial da interface do Twitter, utilizando React JS, TypeScript, CSS e algumas bibliotecas
 
 ## 🚀 Começando
 
@@ -8,63 +8,44 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 
+
 ### 📋 Pré-requisitos
 
 De que coisas você precisa para instalar o software e como instalá-lo?
 
 ```
-Dar exemplos
+Você vai precisar ter instalada a nova versão do Node e do Visual Studio Code
 ```
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
-
-Diga como essa etapa será:
-
 ```
-Dar exemplos
-```
-
-E repita:
-
-```
-Até finalizar
-```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
-
-## ⚙️ Executando os testes
-
-Explicar como executar os testes automatizados para este sistema.
-
-### 🔩 Analise os testes de ponta a ponta
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
-```
-
-### ⌨️ E testes de estilo de codificação
-
-Explique que eles verificam esses testes e porquê.
-
-```
-Dar exemplos
+npm i
 ```
 
 ## 📦 Implantação
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+Para acessar o app, é necessária passar pela validação de login, que tem atualmente como login e senha: 
+
+
+```
+login: admin || senha: admin
+```
 
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+* [Emotion React](https://emotion.sh/docs/introduction) - Biblioteca
+* [MaterialUi](https://mui.com/) - Biblioteca de icones em geral
+* [Storybook](https://storybook.js.org/) - Workshop e documentação
+* [Firebase](https://firebase.google.com/) - Neste projeto foi utilizado como um banco de dados local
+* [React Flip Move](https://www.npmjs.com/package/react-flip-move) - Animações 
+* [Styled Components](https://styled-components.com/) - Estilizaçções
+* [React Twitter Embed](https://www.npmjs.com/package/react-twitter-embed) - API de widgets do twitter
+* [TypeScript](https://www.typescriptlang.org/) - Linguagem
+* [JavaScript](https://www.javascript.com/) - Linguagem
+* [React](https://reactjs.org/) - Biblioteca Principal
 
 ## 🖇️ Colaborando
 
@@ -72,14 +53,11 @@ Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoS
 
 ## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as tags neste repositório
 
 ## ✒️ Autores
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **Caio César** - *Trabalho Inicial* - [caiocesar333](https://github.com/caiocesar333)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
@@ -89,11 +67,8 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](h
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
 
+* Obrigado aos instrutores por tirarem todas as dúvidas necessárias 📢;
+* Aos meus colegas por sempre se dispor a ajudar 🍺;
+* E à [Compass UOL](https://compass.uol/pt/home/);
 
----
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
